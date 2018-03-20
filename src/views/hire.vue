@@ -71,6 +71,7 @@
 
       <p class="small text-muted">* Required</p>
 
+      <input type="hidden" name="_subject" value="Amalia - Hire"/>
       <input type="hidden" name="_next" value="https://amalia.netlify.com/sent"/>
 
       <button type="submit" class="btn btn-primary" data-aos="fade-up-right" data-aos-delay="400">

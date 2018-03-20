@@ -25,6 +25,7 @@
 
       <p class="small text-muted">* Required</p>
 
+      <input type="hidden" name="_subject" value="Amalia - Contact"/>
       <input type="hidden" name="_next" value="https://amalia.netlify.com/sent"/>
 
       <button type="submit" class="btn btn-primary" data-aos="fade-down-right" data-aos-delay="400">
