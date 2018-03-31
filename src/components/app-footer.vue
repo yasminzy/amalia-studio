@@ -44,7 +44,7 @@ export default {
       accounts: [
         {
           icon: "social-facebook",
-          link: "https://www.facebook.com"
+          link: "https://www.facebook.com/yzyusrina"
         },
         {
           icon: "social-instagram",
