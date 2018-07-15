@@ -83,22 +83,22 @@ export default {
     return {
       services: [
         {
-          icon: "ribbon-b",
+          icon: "md-ribbon",
           label: "Branding",
           sublabel: "All products"
         },
         {
-          icon: "paintbrush",
+          icon: "md-brush",
           label: "Design",
           sublabel: "Website"
         },
         {
-          icon: "briefcase",
+          icon: "md-briefcase",
           label: "Marketing",
           sublabel: "All products"
         },
         {
-          icon: "headphone",
+          icon: "md-headset",
           label: "Support",
           sublabel: "Fast & friendly"
         }

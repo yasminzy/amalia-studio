@@ -43,19 +43,19 @@ export default {
     return {
       accounts: [
         {
-          icon: "social-facebook",
+          icon: "logo-facebook",
           link: "https://www.facebook.com/yzyusrina"
         },
         {
-          icon: "social-instagram",
+          icon: "logo-instagram",
           link: "https://www.instagram.com"
         },
         {
-          icon: "social-pinterest",
+          icon: "logo-pinterest",
           link: "https://www.youtube.com"
         },
         {
-          icon: "social-twitter",
+          icon: "logo-twitter",
           link: "https://twitter.com"
         }
       ]

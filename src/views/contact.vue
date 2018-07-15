@@ -29,7 +29,7 @@
       <input type="hidden" name="_next" value="https://amalia.netlify.com/sent"/>
 
       <button type="submit" class="btn btn-primary" data-aos="fade-down-right" data-aos-delay="400">
-        <i class="icon ion-paper-airplane"></i>
+        <i class="icon ion-md-paper-plane"></i>
         SEND
       </button>
     </form>

@@ -25,12 +25,12 @@
       </div>
 
       <a class="carousel-control-prev d-none d-sm-flex" href="#controls" role="button" data-slide="prev">
-        <i class="h3 icon ion-chevron-left text-dark"/>
+        <i class="h3 icon ion-md-arrow-dropleft text-dark"/>
         <span class="sr-only">Previous</span>
       </a>
 
       <a class="carousel-control-next d-none d-sm-flex" href="#controls" role="button" data-slide="next">
-        <i class="h3 icon ion-chevron-right text-dark"/>
+        <i class="h3 icon ion-md-arrow-dropright text-dark"/>
         <span class="sr-only">Next</span>
       </a>
     </div>
