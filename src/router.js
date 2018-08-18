@@ -1,33 +1,25 @@
-import Vue from "vue";
-
+import Home from "./views/home";
 import Router from "vue-router";
+
+import Vue from "vue";
 Vue.use(Router);
 
-import About from "./views/about";
-import Contact from "./views/contact";
-import Hire from "./views/hire";
-import Home from "./views/home";
-import PostItem from "./components/post-item";
-import PostLayout from "./components/post-layout";
-import Posts from "./views/posts";
-import Projects from "./views/projects";
-import Sent from "./views/sent";
-
 export default new Router({
+  base: process.env.BASE_URL,
   mode: "history",
   routes: [
     { path: "/", component: Home },
-    { path: "/about", component: About },
-    { path: "/contact", component: Contact },
-    { path: "/hire", component: Hire },
-    { path: "/projects", component: Projects },
-    { path: "/sent", component: Sent },
+    { path: "/about", component: () => import("./views/about") },
+    { path: "/contact", component: () => import("./views/contact") },
+    { path: "/hire", component: () => import("./views/hire") },
+    { path: "/projects", component: () => import("./views/projects") },
+    { path: "/sent", component: () => import("./views/sent") },
     {
       path: "/posts",
-      component: PostLayout,
+      component: () => import("./components/post-layout"),
       children: [
-        { path: "", component: Posts },
-        { path: ":title", component: PostItem }
+        { path: "", component: () => import("./views/posts") },
+        { path: ":title", component: () => import("./components/post-item") }
       ]
     }
   ],
