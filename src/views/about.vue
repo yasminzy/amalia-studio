@@ -32,7 +32,7 @@
                 class="d-sm-flex align-items-center d-md-block">
                 <div class="img-wrapper">
                   <img
-                    v-lazy="'img/members/' + urlize(item.name) + '.jpeg'"
+                    v-lazy="require('../assets/img/members/' + urlize(item.name) + '.jpeg')"
                     v-bind:alt="item.name"
                     class="card-img-top hvr-grow">
                 </div>

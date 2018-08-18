@@ -16,7 +16,7 @@
               data-aos="flip-down"
               class="img-wrapper">
               <img
-                v-lazy="'img/posts/' + item.img"
+                v-lazy="require('../assets/img/posts/' + item.img)"
                 v-bind:alt="item.title"
                 class="card-img-top hvr-grow">
             </div>

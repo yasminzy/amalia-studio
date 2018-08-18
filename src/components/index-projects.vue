@@ -16,7 +16,7 @@
               data-aos="zoom-in-right"
               class="img-wrapper">
               <img
-                v-lazy="'img/projects/' + item.img"
+                v-lazy="require('../assets/img/projects/' + item.img)"
                 v-bind:alt="item.title"
                 class="card-img-top hvr-grow">
             </div>

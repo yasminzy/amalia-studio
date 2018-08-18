@@ -18,7 +18,7 @@
             v-bind:key="index"
             class="carousel-item">
             <img
-              v-lazy="'img/testimonials/' + urlize(item.name) + '.jpeg'"
+              v-lazy="require('../assets/img/testimonials/' + urlize(item.name) + '.jpeg')"
               v-bind:alt="item.name"
               class="avatar hvr-grow img-fluid my-5 rounded-circle">
 
@@ -43,7 +43,7 @@
           <ion-icon
             class="h3 text-dark"
             name="arrow-dropleft"/>
-            
+
           <span class="sr-only">Previous</span>
         </a>
 

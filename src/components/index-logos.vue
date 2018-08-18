@@ -8,7 +8,7 @@
           data-aos="slide-right"
           class="px-1 px-sm-2 px-md-3 px-lg-4 px-xl-5">
           <img
-            v-lazy="'img/logos/' + urlize(item) + '.png'"
+            v-lazy="require('../assets/img/logos/' + urlize(item) + '.png')"
             v-bind:alt="item"
             class="img-fluid hvr-grow">
         </li>
