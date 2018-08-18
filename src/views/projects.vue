@@ -1,28 +1,38 @@
 <template>
-<div class="container-fluid py-4">
-  <div class="container">
-    <h1>Projects</h1>
+  <div class="container-fluid py-4">
+    <div class="container">
+      <h1>Projects</h1>
 
-    <hr class="mb-4">
+      <hr class="mb-4">
 
-    <div class="row text-center">
-      <div class="col-md-6 col-lg-4" v-for="(item, index) in sortedProjects" v-bind:key="index">
-        <div class="border-0 card hvr-shadow mb-4 w-100">
-          <a v-bind:href="item.link">
-            <div class="img-wrapper" data-aos="flip-right">
-              <img class="card-img-top hvr-grow" v-bind:src="'img/projects/' + item.img" v-bind:alt="item.title">
-            </div>
+      <div class="row text-center">
+        <div
+          v-for="(item, index) in sortedProjects"
+          v-bind:key="index"
+          class="col-md-6 col-lg-4">
+          <div class="border-0 card hvr-shadow mb-4 w-100">
+            <a v-bind:href="item.link">
+              <div
+                data-aos="flip-right"
+                class="img-wrapper">
+                <img
+                  v-lazy="'img/projects/' + item.img"
+                  v-bind:alt="item.title"
+                  class="card-img-top hvr-grow">
+              </div>
 
-            <div class="card-body" data-aos="flip-left">
-              <small class="text-muted">{{ item.type }}</small>
-              <h5 class="card-title">{{ item.title }}</h5>
-            </div>
-          </a>
+              <div
+                data-aos="flip-left"
+                class="card-body">
+                <small class="text-muted">{{ item.type }}</small>
+                <h5 class="card-title">{{ item.title }}</h5>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -41,6 +51,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>

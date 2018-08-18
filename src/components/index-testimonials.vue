@@ -1,41 +1,66 @@
 <template>
-<div class="container-fluid py-5 text-center">
-  <div class="container">
-    <div data-aos="fade">
-      <span class="cursive font-weight-bold text-primary">people say</span>
-      <h2 class="mb-5">- TESTIMONIALS -</h2>
-    </div>
-
-    <div class="carousel slide" id="controls" data-ride="carousel" v-cloak data-aos="zoom-in-down">
-      <div class="carousel-inner mx-auto w-75">
-        <div class="carousel-item" v-for="(item, index) in testimonials" v-bind:key="index">
-          <img class="avatar hvr-grow img-fluid my-5 rounded-circle" v-lazy="'img/testimonials/' + urlize(item.name) + '.jpeg'" v-bind:alt="item.name">
-
-          <blockquote class="blockquote mb-5 px-sm-5">
-            <p class="font-italic">{{ item.content }}</p>
-
-            <footer class="blockquote-footer mt-5">
-              <cite>
-                {{ item.name }}<br>
-                <small>{{ item.position }}</small>
-              </cite>
-            </footer>
-          </blockquote>
-        </div>
+  <div class="container-fluid py-5 text-center">
+    <div class="container">
+      <div data-aos="fade">
+        <span class="cursive font-weight-bold text-primary">people say</span>
+        <h2 class="mb-5">- TESTIMONIALS -</h2>
       </div>
 
-      <a class="carousel-control-prev d-none d-sm-flex" href="#controls" role="button" data-slide="prev">
-        <i class="h3 icon ion-md-arrow-dropleft text-dark"/>
-        <span class="sr-only">Previous</span>
-      </a>
+      <div
+        v-cloak
+        id="controls"
+        data-aos="zoom-in-down"
+        data-ride="carousel"
+        class="carousel slide">
+        <div class="carousel-inner mx-auto w-75">
+          <div
+            v-for="(item, index) in testimonials"
+            v-bind:key="index"
+            class="carousel-item">
+            <img
+              v-lazy="'img/testimonials/' + urlize(item.name) + '.jpeg'"
+              v-bind:alt="item.name"
+              class="avatar hvr-grow img-fluid my-5 rounded-circle">
 
-      <a class="carousel-control-next d-none d-sm-flex" href="#controls" role="button" data-slide="next">
-        <i class="h3 icon ion-md-arrow-dropright text-dark"/>
-        <span class="sr-only">Next</span>
-      </a>
+            <blockquote class="blockquote mb-5 px-sm-5">
+              <p class="font-italic">{{ item.content }}</p>
+
+              <footer class="blockquote-footer mt-5">
+                <cite>
+                  {{ item.name }}<br>
+                  <small>{{ item.position }}</small>
+                </cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <a
+          data-slide="prev"
+          href="#controls"
+          role="button"
+          class="carousel-control-prev d-none d-sm-flex">
+          <ion-icon
+            class="h3 text-dark"
+            name="arrow-dropleft"/>
+            
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a
+          data-slide="next"
+          href="#controls"
+          role="button"
+          class="carousel-control-next d-none d-sm-flex">
+          <ion-icon
+            class="h3 text-dark"
+            name="arrow-dropright"/>
+
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>

@@ -1,13 +1,15 @@
 <template>
-<div>
-  <component v-bind:is="title" v-cloak/></div>
+  <div>
+    <component
+      v-cloak
+      v-bind:is="title"/>
+  </div>
 </template>
 
 <script>
 import LoremIpsumDolorSitAmet from "@/posts/lorem-ipsum-dolor-sit-amet";
 
 export default {
-  name: "PostItem",
   components: {
     LoremIpsumDolorSitAmet
   },
@@ -18,6 +20,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>

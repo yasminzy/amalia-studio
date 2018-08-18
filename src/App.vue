@@ -1,9 +1,9 @@
 <template>
-<div class="d-flex flex-column mh-100">
-  <app-nav/>
-  <router-view data-aos="fade"/>
-  <app-footer/>
-</div>
+  <div class="d-flex flex-column mh-100">
+    <AppNav/>
+    <router-view data-aos="fade"/>
+    <AppFooter/>
+  </div>
 </template>
 
 <script>

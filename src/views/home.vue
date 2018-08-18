@@ -1,12 +1,12 @@
 <template>
-<div>
-  <index-header/>
-  <index-about/>
-  <index-projects/>
-  <index-testimonials/>
-  <index-posts/>
-  <index-logos/>
-</div>
+  <div>
+    <IndexHeader/>
+    <IndexAbout/>
+    <IndexProjects/>
+    <IndexTestimonials/>
+    <IndexPosts/>
+    <IndexLogos/>
+  </div>
 </template>
 
 <script>
@@ -28,6 +28,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>

@@ -1,45 +1,77 @@
 <template>
-<div class="container-fluid py-4">
-  <div class="container">
-    <h1>Contact</h1>
-    <p class="text-muted">This form is for general inquiry. Want to <router-link to="hire">hire us</router-link> instead?</p>
+  <div class="container-fluid py-4">
+    <div class="container">
+      <h1>Contact</h1>
+      <p class="text-muted">This form is for general inquiry. Want to <router-link to="hire">hire us</router-link> instead?</p>
 
-    <hr class="mb-4">
+      <hr class="mb-4">
 
-    <form name="contact-yasminzy" action="https://formspree.io/yzyusrina@ymail.com" method="POST" data-aos="fade-down-left">
-      <div class="form-group">
-        <label for="name">Name*</label>
-        <input class="form-control" id="name" type="text" name="name" required>
-      </div>
+      <form
+        data-aos="fade-down-left"
+        action="https://formspree.io/yzyusrina@ymail.com"
+        method="POST"
+        name="contact-yasminzy">
+        <div class="form-group">
+          <label for="name">Name*</label>
+          <input
+            id="name"
+            class="form-control"
+            name="name"
+            type="text"
+            required>
+        </div>
 
-      <div class="form-group">
-        <label for="email">Email*</label>
-        <input class="form-control" id="email" type="email" name="_replyto" aria-describedby="emailHelp" required>
-        <small class="form-text text-muted" id="emailHelp">We'll never share your email with anyone else.</small>
-      </div>
+        <div class="form-group">
+          <label for="email">Email*</label>
+          <input
+            id="email"
+            class="form-control"
+            name="_replyto"
+            type="email"
+            aria-describedby="emailHelp"
+            required>
+          <small
+            id="emailHelp"
+            class="form-text text-muted">
+            We'll never share your email with anyone else.
+          </small>
+        </div>
 
-       <div class="form-group">
-        <label for="message">Message*</label>
-        <textarea class="form-control" id="message" rows="3" name="message" required></textarea>
-      </div>
+        <div class="form-group">
+          <label for="message">Message*</label>
 
-      <p class="small text-muted">* Required</p>
+          <textarea
+            id="message"
+            class="form-control"
+            name="message"
+            rows="3"
+            required/>
+        </div>
 
-      <input type="hidden" name="_subject" value="Amalia - Contact"/>
-      <input type="hidden" name="_next" value="https://amalia.netlify.com/sent"/>
+        <p class="small text-muted">* Required</p>
 
-      <button type="submit" class="btn btn-primary" data-aos="fade-down-right" data-aos-delay="400">
-        <i class="icon ion-md-paper-plane"></i>
-        SEND
-      </button>
-    </form>
+        <input
+          name="_subject"
+          type="hidden"
+          value="Amalia - Contact">
+
+        <input
+          name="_next"
+          type="hidden"
+          value="https://amalia.netlify.com/sent">
+
+        <button
+          data-aos="fade-down-right"
+          data-aos-delay="400"
+          class="btn btn-primary"
+          type="submit">
+          <ion-icon name="paper-plane"/>
+          SEND
+        </button>
+      </form>
+    </div>
   </div>
-</div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 form {
