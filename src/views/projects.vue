@@ -6,24 +6,18 @@
       <hr class="mb-4">
 
       <div class="row text-center">
-        <div
-          v-for="(item, index) in sortedProjects"
-          v-bind:key="index"
-          class="col-md-6 col-lg-4">
+        <div v-for="(item, index) in sortedProjects" v-bind:key="index" class="col-md-6 col-lg-4">
           <div class="border-0 card hvr-shadow mb-4 w-100">
             <a v-bind:href="item.link">
-              <div
-                data-aos="flip-right"
-                class="img-wrapper">
+              <div class="img-wrapper" data-aos="flip-right">
                 <img
                   v-lazy="require('../assets/img/projects/' + item.img)"
                   v-bind:alt="item.title"
-                  class="card-img-top hvr-grow">
+                  class="card-img-top hvr-grow"
+                >
               </div>
 
-              <div
-                data-aos="flip-left"
-                class="card-body">
+              <div class="card-body" data-aos="flip-left">
                 <small class="text-muted">{{ item.type }}</small>
                 <h5 class="card-title">{{ item.title }}</h5>
               </div>

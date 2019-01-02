@@ -1,8 +1,8 @@
 <template>
   <div class="d-flex flex-column mh-100">
-    <AppNav/>
-    <router-view data-aos="fade"/>
-    <AppFooter/>
+    <AppNav />
+    <router-view data-aos="fade" />
+    <AppFooter />
   </div>
 </template>
 

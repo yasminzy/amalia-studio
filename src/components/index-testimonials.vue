@@ -9,25 +9,25 @@
       <div
         v-cloak
         id="controls"
+        class="carousel slide"
         data-aos="zoom-in-down"
         data-ride="carousel"
-        class="carousel slide">
+      >
         <div class="carousel-inner mx-auto w-75">
-          <div
-            v-for="(item, index) in testimonials"
-            v-bind:key="index"
-            class="carousel-item">
+          <div v-for="(item, index) in testimonials" v-bind:key="index" class="carousel-item">
             <img
               v-lazy="require('../assets/img/testimonials/' + urlize(item.name) + '.jpeg')"
               v-bind:alt="item.name"
-              class="avatar hvr-grow img-fluid my-5 rounded-circle">
+              class="avatar hvr-grow img-fluid my-5 rounded-circle"
+            >
 
             <blockquote class="blockquote mb-5 px-sm-5">
               <p class="font-italic">{{ item.content }}</p>
 
               <footer class="blockquote-footer mt-5">
                 <cite>
-                  {{ item.name }}<br>
+                  {{ item.name }}
+                  <br />
                   <small>{{ item.position }}</small>
                 </cite>
               </footer>
@@ -36,25 +36,23 @@
         </div>
 
         <a
-          data-slide="prev"
+          class="carousel-control-prev d-none d-sm-flex"
           href="#controls"
           role="button"
-          class="carousel-control-prev d-none d-sm-flex">
-          <ion-icon
-            class="h3 text-dark"
-            name="arrow-dropleft"/>
+          data-slide="prev"
+        >
+          <ion-icon class="h3 text-dark" name="arrow-dropleft" />
 
           <span class="sr-only">Previous</span>
         </a>
-
+        
         <a
           data-slide="next"
           href="#controls"
           role="button"
-          class="carousel-control-next d-none d-sm-flex">
-          <ion-icon
-            class="h3 text-dark"
-            name="arrow-dropright"/>
+          class="carousel-control-next d-none d-sm-flex"
+        >
+          <ion-icon class="h3 text-dark" name="arrow-dropright" />
 
           <span class="sr-only">Next</span>
         </a>

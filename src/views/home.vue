@@ -1,11 +1,11 @@
 <template>
   <div>
-    <IndexHeader/>
-    <IndexAbout/>
-    <IndexProjects/>
-    <IndexTestimonials/>
-    <IndexPosts/>
-    <IndexLogos/>
+    <IndexHeader />
+    <IndexAbout />
+    <IndexProjects />
+    <IndexTestimonials />
+    <IndexPosts />
+    <IndexLogos />
   </div>
 </template>
 

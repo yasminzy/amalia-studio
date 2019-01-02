@@ -1,5 +1,5 @@
 <template>
   <div class="container-fluid py-4">
-    <router-view/>
+    <router-view />
   </div>
 </template>

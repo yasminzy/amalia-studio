@@ -5,12 +5,14 @@
         <li
           v-for="(item, index) in logos"
           v-bind:key="index"
+          class="px-1 px-sm-2 px-md-3 px-lg-4 px-xl-5"
           data-aos="slide-right"
-          class="px-1 px-sm-2 px-md-3 px-lg-4 px-xl-5">
+        >
           <img
             v-lazy="require('../assets/img/logos/' + urlize(item) + '.png')"
             v-bind:alt="item"
-            class="img-fluid hvr-grow">
+            class="img-fluid hvr-grow"
+          >
         </li>
       </ul>
     </div>

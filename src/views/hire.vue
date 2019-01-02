@@ -7,18 +7,14 @@
       <hr class="mb-4">
 
       <form
-        data-aos="fade-up-left"
         action="https://formspree.io/yzyusrina@ymail.com"
         method="POST"
-        name="hire">
+        name="hire"
+        data-aos="fade-up-left"
+      >
         <div class="form-group">
           <label for="name">Name*</label>
-          <input
-            id="name"
-            class="form-control"
-            name="name"
-            type="text"
-            required>
+          <input id="name" class="form-control" name="name" type="text" required>
         </div>
 
         <div class="form-group">
@@ -29,41 +25,29 @@
             name="_replyto"
             type="email"
             aria-describedby="emailHelp"
-            required>
+            required
+          >
           <small
             id="emailHelp"
-            class="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
+            class="form-text text-muted"
+          >We'll never share your email with anyone else.</small>
         </div>
 
         <div class="form-group">
           <label for="website">Website</label>
-          <input
-            id="website"
-            class="form-control"
-            name="website"
-            type="text">
+          <input id="website" class="form-control" name="website" type="text">
         </div>
 
         <div class="form-row">
           <legend class="col-form-label col-sm-12 pt-0">Budget*</legend>
           <div class="form-group col-4 col-sm-2">
-            <select
-              id="currency"
-              class="form-control"
-              name="currency">
+            <select id="currency" class="form-control" name="currency">
               <option selected>USD $</option>
               <option>IDR Rp</option>
             </select>
           </div>
           <div class="form-group col-8 col-sm-10">
-            <input
-              id="budget"
-              class="form-control"
-              name="budget"
-              type="number"
-              required>
+            <input id="budget" class="form-control" name="budget" type="number" required>
           </div>
         </div>
 
@@ -75,13 +59,10 @@
               class="form-check-input"
               name="projectLength"
               type="radio"
-              value="Less than 1 week">
-
-            <label
-              class="form-check-label"
-              for="option1">
-              Less than 1 week
-            </label>
+              value="Less than 1 week"
+            >
+            
+            <label class="form-check-label" for="option1">Less than 1 week</label>
           </div>
 
           <div class="form-check">
@@ -91,13 +72,10 @@
               name="projectLength"
               type="radio"
               value="1 to 2 weeks"
-              checked>
-
-            <label
-              class="form-check-label"
-              for="option2">
-              1 to 2 weeks
-            </label>
+              checked
+            >
+            
+            <label class="form-check-label" for="option2">1 to 2 weeks</label>
           </div>
 
           <div class="form-check">
@@ -106,13 +84,10 @@
               class="form-check-input"
               name="projectLength"
               type="radio"
-              value="Less than 1 month">
-
-            <label
-              class="form-check-label"
-              for="option3">
-              Less than 1 month
-            </label>
+              value="Less than 1 month"
+            >
+            
+            <label class="form-check-label" for="option3">Less than 1 month</label>
           </div>
 
           <div class="form-check">
@@ -121,45 +96,25 @@
               class="form-check-input"
               name="projectLength"
               type="radio"
-              value="More than 1 month">
-
-            <label
-              class="form-check-label"
-              for="option4">
-              More than 1 month
-            </label>
+              value="More than 1 month"
+            >
+            
+            <label class="form-check-label" for="option4">More than 1 month</label>
           </div>
         </div>
 
         <div class="form-group">
           <label for="details">Details*</label>
-          <textarea
-            id="details"
-            class="form-control"
-            name="details"
-            rows="3"
-            required/>
+          <textarea id="details" class="form-control" name="details" rows="3" required/>
         </div>
 
         <p class="small text-muted">* Required</p>
 
-        <input
-          name="_subject"
-          type="hidden"
-          value="Amalia - Hire">
-        <input
-          name="_next"
-          type="hidden"
-          value="https://amalia.netlify.com/sent">
-
-        <button
-          data-aos="fade-up-right"
-          data-aos-delay="400"
-          class="btn btn-primary"
-          type="submit">
-
-          <ion-icon name="paper-plane"/>
-          SEND
+        <input name="_subject" type="hidden" value="Amalia - Hire">
+        <input name="_next" type="hidden" value="https://amalia.netlify.com/sent">
+        
+        <button class="btn btn-primary" type="submit" data-aos="fade-up-right" data-aos-delay="400">
+          <ion-icon name="paper-plane" />SEND
         </button>
       </form>
     </div>

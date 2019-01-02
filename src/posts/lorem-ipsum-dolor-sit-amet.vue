@@ -2,10 +2,7 @@
   <article class="container">
     <h1 class="text-center">Lorem Ipsum Dolor Sit Amet</h1>
 
-    <img
-      src="https://placeimg.com/640/480/tech"
-      alt=""
-      class="d-block img-fluid mx-auto my-5">
+    <img class="d-block img-fluid mx-auto my-5" src="https://placeimg.com/640/480/tech" alt>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem qui officia at incidunt a, illum impedit! Distinctio accusamus doloremque mollitia aliquid facere magnam nulla culpa voluptatum adipisci, velit modi fugit.</p>
 
