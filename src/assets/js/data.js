@@ -40,7 +40,7 @@ const projects = [
 const posts = [
   {
     title: "Lorem Ipsum Dolor Sit Amet",
-    date: "February 04 2018",
+    date: "February 04 2019",
     tag: "Branding",
     img: "1.jpeg",
     description:
@@ -48,7 +48,7 @@ const posts = [
   },
   {
     title: "Lorem Ipsum Dolor Sit Amet",
-    date: "February 11 2018",
+    date: "February 11 2019",
     tag: "Design",
     img: "2.jpeg",
     description:
@@ -56,7 +56,7 @@ const posts = [
   },
   {
     title: "Lorem Ipsum Dolor Sit Amet",
-    date: "February 18 2018",
+    date: "February 18 2019",
     tag: "Marketing",
     img: "3.jpeg",
     description:
@@ -64,7 +64,7 @@ const posts = [
   },
   {
     title: "Lorem Ipsum Dolor Sit Amet",
-    date: "February 25 2018",
+    date: "February 25 2019",
     tag: "Support",
     img: "4.jpeg",
     description:
@@ -72,7 +72,7 @@ const posts = [
   },
   {
     title: "Lorem Ipsum Dolor Sit Amet",
-    date: "March 04 2018",
+    date: "March 04 2019",
     tag: "Branding",
     img: "5.jpeg",
     description:
@@ -80,7 +80,7 @@ const posts = [
   },
   {
     title: "Lorem Ipsum Dolor Sit Amet",
-    date: "March 11 2018",
+    date: "March 11 2019",
     tag: "Design",
     img: "6.jpeg",
     description:
@@ -88,7 +88,7 @@ const posts = [
   },
   {
     title: "Lorem Ipsum Dolor Sit Amet",
-    date: "March 18 2018",
+    date: "March 18 2019",
     tag: "Marketing",
     img: "7.jpeg",
     description:
@@ -96,7 +96,7 @@ const posts = [
   },
   {
     title: "Lorem Ipsum Dolor Sit Amet",
-    date: "March 25 2018",
+    date: "March 25 2019",
     tag: "Support",
     img: "8.jpeg",
     description:
