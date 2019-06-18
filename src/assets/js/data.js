@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Tiara's British Specialities",
     type: "Restaurant",
-    img: "tiara.jpg",
+    img: "tiara.png",
     link: "https://tiara.netlify.com"
   },
   {
