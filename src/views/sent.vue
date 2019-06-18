@@ -6,7 +6,7 @@
 
         <p class="lead">Expect response within 24 hours.</p>
 
-        <hr class="my-4">
+        <hr class="my-4" />
 
         <p class="cursive mb-5">Thanks for reaching out. Have a good day 😊</p>
 
@@ -16,7 +16,9 @@
             to="/"
             data-aos="fade-left"
             data-aos-delay="400"
-          >BACK TO HOME</router-link>
+          >
+            BACK TO HOME
+          </router-link>
         </p>
       </div>
     </div>
