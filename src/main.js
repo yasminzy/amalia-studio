@@ -5,8 +5,6 @@ import router from "./router";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import "jquery/dist/jquery.slim.min";
-import "popper.js/dist/popper.min";
 import "bootstrap/dist/js/bootstrap.min";
 
 import VueLazyload from "vue-lazyload";
