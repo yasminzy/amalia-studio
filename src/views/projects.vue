@@ -3,18 +3,22 @@
     <div class="container">
       <h1>Projects</h1>
 
-      <hr class="mb-4">
+      <hr class="mb-4" />
 
       <div class="row text-center">
-        <div v-for="(item, index) in sortedProjects" v-bind:key="index" class="col-md-6 col-lg-4">
+        <div
+          v-for="(item, index) in sortedProjects"
+          :key="index"
+          class="col-md-6 col-lg-4"
+        >
           <div class="border-0 card hvr-shadow mb-4 w-100">
-            <a v-bind:href="item.link">
+            <a :href="item.link">
               <div class="img-wrapper" data-aos="flip-right">
                 <img
                   v-lazy="require('../assets/img/projects/' + item.img)"
-                  v-bind:alt="item.title"
+                  :alt="item.title"
                   class="card-img-top hvr-grow"
-                >
+                />
               </div>
 
               <div class="card-body" data-aos="flip-left">

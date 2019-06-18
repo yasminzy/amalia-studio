@@ -11,7 +11,7 @@
         alt="Logo"
         height="30"
         width="30"
-      >
+      />
       <span class="cursive">Amalia</span>
     </router-link>
 
@@ -29,8 +29,10 @@
 
     <div id="navbarSupportedContent" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto w-auto">
-        <li v-for="(item, index) in menu" v-bind:key="index" class="nav-item">
-          <router-link v-bind:to="to(item)" class="nav-link">{{ item.label || item }}</router-link>
+        <li v-for="(item, index) in menu" :key="index" class="nav-item">
+          <router-link :to="to(item)" class="nav-link">{{
+            item.label || item
+          }}</router-link>
         </li>
       </ul>
     </div>

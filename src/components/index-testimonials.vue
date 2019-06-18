@@ -14,12 +14,20 @@
         data-ride="carousel"
       >
         <div class="carousel-inner mx-auto w-75">
-          <div v-for="(item, index) in testimonials" v-bind:key="index" class="carousel-item">
+          <div
+            v-for="(item, index) in testimonials"
+            :key="index"
+            class="carousel-item"
+          >
             <img
-              v-lazy="require('../assets/img/testimonials/' + urlize(item.name) + '.jpeg')"
-              v-bind:alt="item.name"
+              v-lazy="
+                require('../assets/img/testimonials/' +
+                  urlize(item.name) +
+                  '.jpeg')
+              "
+              :alt="item.name"
               class="avatar hvr-grow img-fluid my-5 rounded-circle"
-            >
+            />
 
             <blockquote class="blockquote mb-5 px-sm-5">
               <p class="font-italic">{{ item.content }}</p>
@@ -45,7 +53,7 @@
 
           <span class="sr-only">Previous</span>
         </a>
-        
+
         <a
           data-slide="next"
           href="#controls"

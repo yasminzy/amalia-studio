@@ -1,6 +1,6 @@
 <template>
   <div>
-    <component v-bind:is="title" v-cloak/>
+    <component :is="title" v-cloak />
   </div>
 </template>
 

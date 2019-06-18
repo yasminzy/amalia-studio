@@ -8,17 +8,17 @@
     <div class="row">
       <div
         v-for="(item, index) in filter(projects, 6)"
-        v-bind:key="index"
+        :key="index"
         class="col-md-6 col-lg-4"
       >
         <div class="border-0 card hvr-shadow mb-4 w-100">
-          <a v-bind:href="item.link">
+          <a :href="item.link">
             <div class="img-wrapper" data-aos="zoom-in-right">
               <img
                 v-lazy="require('../assets/img/projects/' + item.img)"
-                v-bind:alt="item.title"
+                :alt="item.title"
                 class="card-img-top hvr-grow"
-              >
+              />
             </div>
 
             <div class="card-body" data-aos="zoom-in-left">

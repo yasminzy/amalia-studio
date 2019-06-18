@@ -8,34 +8,59 @@
         </div>
 
         <div data-aos="zoom-out-down">
-          <p
-            class="text-center mx-auto"
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo exercitationem possimus impedit facere porro voluptas cum dolorum quia quas, explicabo inventore error, nam eius maiores quibusdam neque sed unde. Quidem!</p>
+          <p class="text-center mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            exercitationem possimus impedit facere porro voluptas cum dolorum
+            quia quas, explicabo inventore error, nam eius maiores quibusdam
+            neque sed unde. Quidem!
+          </p>
 
           <p class="cursive mx-auto my-4 small">Amalia Digital Studio</p>
         </div>
 
         <div data-aos="zoom-out-up">
-          <router-link class="btn btn-light mr-3" to="/about">LEARN MORE</router-link>
+          <router-link class="btn btn-light mr-3" to="/about"
+            >LEARN MORE</router-link
+          >
 
-          <router-link class="btn btn-primary mr-3" to="/contact">CONTACT US</router-link>
+          <router-link class="btn btn-primary mr-3" to="/contact"
+            >CONTACT US</router-link
+          >
         </div>
       </div>
 
       <div data-aos="zoom-out" class="row">
         <div class="col-md-6 col-xl-4 mt-lg-0 order-xl-1">
           <div class="border-0 card h-100 mb-4">
-            <h3 class="bg-transparent border-bottom-0 card-header h5" data-aos="fade">WHAT WE DO</h3>
+            <h3
+              class="bg-transparent border-bottom-0 card-header h5"
+              data-aos="fade"
+            >
+              WHAT WE DO
+            </h3>
 
             <div class="card-body" data-aos="fade">
-              <p
-                class="mb-4 small text-muted"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore porro est non commodi corporis voluptas sapiente quod, optio quis nam saepe aut. Voluptates officia harum, odit commodi repudiandae iure. Aliquam.</p>
+              <p class="mb-4 small text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                porro est non commodi corporis voluptas sapiente quod, optio
+                quis nam saepe aut. Voluptates officia harum, odit commodi
+                repudiandae iure. Aliquam.
+              </p>
 
               <ul class="list-unstyled mb-4 row">
-                <li v-for="(item, index) in services" v-bind:key="index" class="col-sm-6 mb-3">
-                  <router-link to="services" class="d-flex align-items-center text-dark">
-                    <i v-bind:class="'h5 icon ion-' + item.icon + ' mb-0 mr-3 text-primary'" />
+                <li
+                  v-for="(item, index) in services"
+                  :key="index"
+                  class="col-sm-6 mb-3"
+                >
+                  <router-link
+                    to="services"
+                    class="d-flex align-items-center text-dark"
+                  >
+                    <ion-icon
+                      :name="item.icon"
+                      class="h5 icon mb-0 mr-3 text-primary"
+                    />
 
                     <p class="mb-0">
                       {{ item.label }}
@@ -55,13 +80,17 @@
             <h3
               class="bg-transparent border-bottom-0 card-header h5"
               data-aos="fade"
-            >WORKING PROCESS</h3>
+            >
+              WORKING PROCESS
+            </h3>
 
             <ul data-aos="fade" class="card-body list-unstyled">
-              <li v-for="(item, index) in processes" v-bind:key="index" class="mb-4">
+              <li v-for="(item, index) in processes" :key="index" class="mb-4">
                 <small>Lorem ipsum</small>
                 <h4 class="card-title h6 mb-1 text-primary">{{ item }}</h4>
-                <p class="card-text small text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="card-text small text-muted">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
               </li>
             </ul>
           </div>
@@ -69,17 +98,26 @@
 
         <div class="col-md-6 col-xl-4 order-xl-last">
           <div class="border-0 card h-100 mb-4">
-            <h3 class="bg-transparent border-bottom-0 card-header h5" data-aos="fade">OUR SKILLS</h3>
+            <h3
+              class="bg-transparent border-bottom-0 card-header h5"
+              data-aos="fade"
+            >
+              OUR SKILLS
+            </h3>
 
             <div class="card-body" data-aos="fade">
               <ul class="list-unstyled">
-                <li v-for="(item, index) in skills" v-bind:key="index" class="mb-4 row">
-                  <span class="col-sm-5 small">{{ item. label }}</span>
+                <li
+                  v-for="(item, index) in skills"
+                  :key="index"
+                  class="mb-4 row"
+                >
+                  <span class="col-sm-5 small">{{ item.label }}</span>
                   <div class="col-sm-7">
                     <div class="progress">
                       <div
-                        v-bind:aria-valuenow="item.value"
-                        v-bind:style="{ width: item.value + '%' }"
+                        :aria-valuenow="item.value"
+                        :style="{ width: item.value + '%' }"
                         class="progress-bar bg-primary"
                         role="progressbar"
                         aria-valuemin="0"

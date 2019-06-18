@@ -3,7 +3,9 @@
     <div class="bg-dark container-fluid py-5 text-white">
       <div class="container">
         <div data-aos="fade">
-          <span class="cursive font-weight-bold text-primary">get in touch</span>
+          <span class="cursive font-weight-bold text-primary"
+            >get in touch</span
+          >
 
           <h2 class="mb-5">- CONTACT -</h2>
         </div>
@@ -11,7 +13,9 @@
         <div data-aos="slide-left">
           <ul class="list-unstyled">
             <li class="mb-2">
-              <a class="text-light" href="mailto:hi@amalia.com">hi@amalia.com</a>
+              <a class="text-light" href="mailto:hi@amalia.com"
+                >hi@amalia.com</a
+              >
             </li>
 
             <li class="mb-4">
@@ -20,9 +24,9 @@
 
             <li>
               <ul class="list-unstyled d-flex justify-content-center">
-                <li v-for="(item, index) in accounts" v-bind:key="index">
-                  <a v-bind:href="item.link" class="text-light">
-                    <ion-icon v-bind:name="item.icon" class="px-3" />
+                <li v-for="(item, index) in accounts" :key="index">
+                  <a :href="item.link" class="text-light">
+                    <ion-icon :name="item.icon" class="px-3" />
                   </a>
                 </li>
               </ul>
@@ -34,7 +38,7 @@
 
     <div class="bg-black container-fluid py-1">
       <div class="container">
-        <small class="text-muted">&copy; 2019 All Rights Reserved</small>
+        <small class="text-muted">&copy; 2018-2019 All Rights Reserved</small>
       </div>
     </div>
   </footer>
