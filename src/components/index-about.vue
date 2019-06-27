@@ -57,9 +57,10 @@
                     to="services"
                     class="d-flex align-items-center text-dark"
                   >
-                    <ion-icon
-                      :name="item.icon"
-                      class="h5 icon mb-0 mr-3 text-primary"
+                    <span
+                      :class="
+                        'h4 mb-0 mr-3 text-primary typcn typcn-' + item.icon
+                      "
                     />
 
                     <p class="mb-0">
@@ -141,22 +142,22 @@ export default {
     return {
       services: [
         {
-          icon: "md-ribbon",
+          icon: "image",
           label: "Branding",
           sublabel: "All products"
         },
         {
-          icon: "md-brush",
+          icon: "brush",
           label: "Design",
           sublabel: "Website"
         },
         {
-          icon: "md-briefcase",
+          icon: "briefcase",
           label: "Marketing",
           sublabel: "All products"
         },
         {
-          icon: "md-headset",
+          icon: "headphones",
           label: "Support",
           sublabel: "Fast & friendly"
         }

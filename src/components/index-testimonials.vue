@@ -49,8 +49,7 @@
           role="button"
           data-slide="prev"
         >
-          <ion-icon class="h3 text-dark" name="arrow-dropleft" />
-
+          <span class="h1 text-dark typcn typcn-chevron-left" />
           <span class="sr-only">Previous</span>
         </a>
 
@@ -60,8 +59,7 @@
           role="button"
           class="carousel-control-next d-none d-sm-flex"
         >
-          <ion-icon class="h3 text-dark" name="arrow-dropright" />
-
+          <span class="h1 text-dark typcn typcn-chevron-right" />
           <span class="sr-only">Next</span>
         </a>
       </div>

@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 
 import "bootstrap/dist/js/bootstrap.min";
 
+import "typicons.font/src/font/typicons.css";
+
 import VueLazyload from "vue-lazyload";
 Vue.use(VueLazyload);
 

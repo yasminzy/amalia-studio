@@ -146,7 +146,7 @@
           data-aos="fade-up-right"
           data-aos-delay="400"
         >
-          <ion-icon name="send" /> SEND
+          SEND <span class="typcn typcn-arrow-right-thick" />
         </button>
       </form>
     </div>

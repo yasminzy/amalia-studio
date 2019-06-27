@@ -26,7 +26,7 @@
               <ul class="list-unstyled d-flex justify-content-center">
                 <li v-for="(item, index) in accounts" :key="index">
                   <a :href="item.link" class="text-light">
-                    <ion-icon :name="item.icon" class="px-3" />
+                    <span :class="'h5 px-3 typcn typcn-' + item.icon" />
                   </a>
                 </li>
               </ul>
@@ -50,19 +50,19 @@ export default {
     return {
       accounts: [
         {
-          icon: "logo-facebook",
+          icon: "social-facebook",
           link: "https://www.facebook.com"
         },
         {
-          icon: "logo-instagram",
+          icon: "social-instagram",
           link: "https://www.instagram.com"
         },
         {
-          icon: "logo-pinterest",
+          icon: "social-pinterest",
           link: "https://www.youtube.com"
         },
         {
-          icon: "logo-twitter",
+          icon: "social-twitter",
           link: "https://twitter.com"
         }
       ]
