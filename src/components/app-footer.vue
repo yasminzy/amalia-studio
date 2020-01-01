@@ -38,7 +38,7 @@
 
     <div class="bg-black container-fluid py-1">
       <div class="container">
-        <small class="text-muted">&copy; 2018-2019 All Rights Reserved</small>
+        <small class="text-muted">&copy; 2018-2020 All Rights Reserved</small>
       </div>
     </div>
   </footer>
